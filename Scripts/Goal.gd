@@ -10,7 +10,9 @@ func _on_exit_position_generated(exit_position):
 
 
 func _on_Goal_body_entered(body):
-	get_tree().change_scene("res://Scenes/EndScreen.tscn")
+	var error = get_tree().change_scene("res://Scenes/EndScreen.tscn")
+	if error != OK:
+		print("Scene could not be loaded normally")
 
 
 func position_exit(tile_position):
