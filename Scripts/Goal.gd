@@ -10,7 +10,7 @@ func _on_exit_position_generated(exit_position):
 
 
 func _on_Goal_body_entered(body):
-	print("agent detected")
+	get_tree().change_scene("res://Scenes/EndScreen.tscn")
 
 
 func position_exit(tile_position):
