@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://GFX/space.png" type="Texture" id=1]
+
+[node name="Space" type="Sprite"]
+texture = ExtResource( 1 )
