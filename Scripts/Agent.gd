@@ -22,7 +22,6 @@ func _ready():
 	current_direction = DIRECTION.right
 
 func _on_start_position_generated(start_position):
-	print("start_position_generated")
 	current_tile_position = start_position
 	position_agent(current_tile_position)
 	$AgentTimer.start()
